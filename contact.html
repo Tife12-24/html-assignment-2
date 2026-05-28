@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Registration</title>
+</head>
+<body>
+
+    <header>
+        <h1>Get in Touch</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2>User Registration Form</h2>
+        
+        <form action="submit.php" method="POST">
+            
+            <div>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="useremail">Email Address:</label><br>
+                <input type="email" id="useremail" name="email" placeholder="name@example.com" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="userpassword">Password:</label><br>
+                <input type="password" id="userpassword" name="password" placeholder="Create a secure password" required>
+            </div>
+            
+            <br>
+            <hr>
+
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            
+            <br>
+            <hr>
+
+            <div>
+                <label>Hobbies:</label><br>
+                <input type="checkbox" id="hobby1" name="hobby" value="reading">
+                <label for="hobby1">Reading</label><br>
+                
+                <input type="checkbox" id="hobby2" name="hobby" value="sports">
+                <label for="hobby2">Sports / Volleyball</label><br>
+                
+                <input type="checkbox" id="hobby3" name="hobby" value="music">
+                <label for="hobby3">Music</label>
+            </div>
+            
+            <br>
+            <hr>
+
+            <div>
+                <label for="favorite-food">What food do you prefer?</label><br>
+                <select id="favorite-food" name="food">
+                    <option value="rice">Rice</option>
+                    <option value="spaghetti">Spaghetti</option>
+                    <option value="beans">Beans</option>
+                </select>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="usermessage">Leave a Message:</label><br>
+                <textarea id="usermessage" name="message" rows="6" cols="40" placeholder="Write your message here..."></textarea>
+            </div>
+            
+            <br>
+
+            <button type="submit">Submit Form</button>
+
+        </form>
+    </main>
+
+    <br>
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 My Web Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
